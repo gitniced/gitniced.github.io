@@ -78,5 +78,5 @@ theme: even
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/gitniced/gitniced.github.io.git
+  repo: git@github.com:gitniced/gitniced.github.io.git
   branch: master
