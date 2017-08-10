@@ -17,8 +17,12 @@
 
 
 
+  <meta name="description" content="ios webView调试工具"/>
 
 
+
+
+  <meta name="keywords" content="工具, 南" />
 
 
 
@@ -42,7 +46,7 @@
 
 
 
-<link rel="canonical" href="http://yoursite.com/archives/"/>
+<link rel="canonical" href="http://yoursite.com/2017/08/10/ios-webview-debug/"/>
 
 
 <link rel="stylesheet" type="text/css" href="/css/style.css?v=2.4.x" />
@@ -93,11 +97,7 @@
 
 
 
-    <title>
-  
-    Archives · 南
-  
-</title>
+    <title> ios webView调试工具 - 南 </title>
   </head>
 
   <body><div id="mobile-navbar" class="mobile-navbar">
@@ -191,115 +191,85 @@
           <div id="content" class="content">
             
   
-  <section id="archive" class="archive">
-    
-      
-        <div class="archive-title">
-          <span class="archive-post-counter">
-            4 Posts In Total
-          </span>
-        </div>
-      
-    
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          ios webView调试工具
+        
+      </h1>
 
-    
-      
+      <div class="post-meta">
+        <span class="post-time">
+          2017-08-10
+        </span>
         
-        
-
-        
-          
-          <div class="collection-title">
-            <h2 class="archive-year">2017</h2>
+          <div class="post-category">
+            
+              <a href="/categories/工具/">工具</a>
+            
           </div>
         
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-10
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/10/ios-webview-debug/" class="archive-post-link">
-            ios webView调试工具
-          </a>
-        </span>
       </div>
-    
-      
-        
-        
+    </header>
 
-        
-      
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-09
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/09/2017-todolist/" class="archive-post-link">
-            2017年的ToDoList
-          </a>
-        </span>
-      </div>
     
-      
-        
-        
+    
 
-        
+    <div class="post-content">
       
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-09
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/09/blog-promble/" class="archive-post-link">
-            搭建Hexo博客总结
-          </a>
-        </span>
-      </div>
-    
-      
-        
-        
+        <p>通过 chrome 远程调试 iOSwebview ，解决一些在手机上不好定位的问题<br><a id="more"></a></p>
+<p>工作上碰到在 iOS 上页面不好调试，在学校中学过 Andriod 的远程调试，google 一波发现 iOS 也可以远程调试，用的是    ios-webkit-debug-proxy ，主要参考如下（只实现了 win 环境）</p>
+<p>1.<a href="https://github.com/google/ios-webkit-debug-proxy" target="_blank" rel="external">https://github.com/google/ios-webkit-debug-proxy</a><br>这里用到 scoop，win 环境下需要用到 powershell<br>2.<a href="https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter" target="_blank" rel="external">https://github.com/RemoteDebug/remotedebug-ios-webkit-adapter</a> (需要启动代理 remotedebug_ios_webkit_adapter –port=9000)<br>3.<a href="http://www.jianshu.com/p/19c18c924f91" target="_blank" rel="external">http://www.jianshu.com/p/19c18c924f91</a>   (ios_webkit_debug_proxy -f chrome-devtools://devtools/bundled/inspector.html)</p>
+<p>手机需要在设置里safari–开启调试<br>在chrome中打开 localhost:9221 ，可以看到当前已连接的设备列表，点击页面后在 console 中打开页面即可调试</p>
 
-        
       
-      
-      <div class="archive-post">
-        <span class="archive-post-time">
-          
-            08-09
-          
-        </span>
-        <span class="archive-post-title">
-          <a href="/2017/08/09/hello-world/" class="archive-post-link">
-            Hello World
-          </a>
-        </span>
-      </div>
-    
-  </section>
+    </div>
 
-  
-  <nav class="pagination">
     
+      
+      
+
+
+
+      
+      
+    
+
+    
+      <footer class="post-footer">
+        
+          <div class="post-tags">
+            
+              <a href="/tags/工具/">工具</a>
+            
+          </div>
+        
+        
+        
+  <nav class="post-nav">
+    
+    
+      <a class="next" href="/2017/08/09/2017-todolist/">
+        <span class="next-text nav-default">2017年的ToDoList</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
     
   </nav>
 
+      </footer>
+    
+
+  </article>
 
 
           </div>
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>  
       </main>
@@ -376,6 +346,8 @@
     </div>
 
     
+  
+
 
 
     
